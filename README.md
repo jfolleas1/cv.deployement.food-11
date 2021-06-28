@@ -10,9 +10,22 @@ The web app is built using Flask and deployed in a GCP
 
 ## Prerequest
 
-In order to use this module you will need a GCP account. 
+In order to use this module you will need a GCP account. (Note that at the moment
+GCP is providing 300$ of Free trial credit when signing up.)
 You will need to install Google Cloud SDK in order to use the command `gcloud`.
 In order to install it, use the following [link](https://cloud.google.com/sdk/docs/install)
+
+## Deep learning model
+
+You shall put your deep learning model in the folder `deeplearning_model` at the 
+base of your porject folder. It shall contain the following elements:
+- assets
+- varaibles
+- keras_metadata.pb
+- saved_model.pb
+
+To see how to build the model, refer to the following git repository: 
+[cv.im-recognition.food-11](https://github.com/jfolleas1/cv.im-recognition.food-11)
 
 ## Set up the virtual env
 
