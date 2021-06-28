@@ -64,7 +64,7 @@ following commands.
  /!\ it uses the gitignore
 
 You should then be able to see it in the Container Registery app.
-![Container Registery GCP service](readme_images/container_registery.png)
+![Container Registery GCP service](https://github.com/jfolleas1/cv.deployement.food-11/blob/master/readme_images/container_registery.png?raw=true)
 
 
 - Deploy your model 
