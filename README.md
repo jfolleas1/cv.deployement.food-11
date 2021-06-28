@@ -49,38 +49,39 @@ following commands.
 
 
 - Verify that you are in the right project.
+
 `gcloud config get-value project`
 
-
 - Set the project ID to build your image URI.
+
 `export PROJECT_ID=train-food-11-classification`
 
-
 - Set your docker image URI.
+
 `export IMAGE_URI=eu.gcr.io/$PROJECT_ID/food_predictor_app`
 
 - Build your docker image and make it available in Container Registery.
+
 `gcloud builds submit --tag $IMAGE_URI`
- /!\ it uses the gitignore
+
+ /!\ The gitignore can have an influence on it.
 
 You should then be able to see it in the Container Registery app.
 ![Container Registery GCP service](https://github.com/jfolleas1/cv.deployement.food-11/blob/master/readme_images/container_registery.png?raw=true)
 
 
-- Deploy your model 
-`gcloud run deploy --image $IMAGE_URI --platform managed`
+- Deploy your model app on GCP with the following command:
 
-gcloud run deploy --image $IMAGE_URI --platform managed --memory 2.0G
+`gcloud run deploy --image $IMAGE_URI --platform managed --memory 2.0G`
 
-For more details, we recomand 
-go in cloud run GCP service to see your running app
+![Cloud Run GCP service](https://github.com/jfolleas1/cv.deployement.food-11/blob/master/readme_images/cloud_run.png?raw=true)
 
 
-annex: 
+## TODO :
 
+When running the deployement command you will see the following line.
 
+`Allow unauthenticated invocations to [foodpredictorapp] (y/N)? -> How to set to No`
 
-
-TODO :
-
-Allow unauthenticated invocations to [foodpredictorapp] (y/N)? -> How to set to No
+So far I haven't manage to see how to force the authentication to access the
+application, but there is surely a way.
