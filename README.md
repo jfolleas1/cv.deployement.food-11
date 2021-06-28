@@ -95,9 +95,15 @@ You can also go to your console and see the deployed application.
 
 ## TODO :
 
+### Authentication
+
 When running the deployement command you will see the following line.
 
 `Allow unauthenticated invocations to [foodpredictorapp] (y/N)? -> How to set to No`
 
 So far I haven't manage to see how to force the authentication to access the
 application, but there is surely a way.
+
+### Customer domain name
+
+It is also possible to create a custom domaine name. Coming soon.
