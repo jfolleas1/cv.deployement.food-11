@@ -107,3 +107,8 @@ application, but there is surely a way.
 ### Customer domain name
 
 It is also possible to create a custom domaine name. Coming soon.
+
+
+#### Source
+
+The repository is based on the very high quality udemy course: https://www.udemy.com/course/train-and-deploy-deep-learning-models
