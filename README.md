@@ -74,6 +74,9 @@ You should then be able to see it in the Container Registery app.
 
 `gcloud run deploy --image $IMAGE_URI --platform managed --memory 2.0G`
 
+When executing this command, you will see in the output the URL for your web app.
+
+You can also go to your console and see the deployed application.
 ![Cloud Run GCP service](https://github.com/jfolleas1/cv.deployement.food-11/blob/master/readme_images/cloud_run.png?raw=true)
 
 
