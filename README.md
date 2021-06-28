@@ -15,3 +15,28 @@ python predictor.py
 
 `gunicorn -b 0.0.0.0:8080 predictor:app`
 
+## Deployement on GCP
+
+Doc : https://cloud.google.com/run/docs/quickstarts/build-and-deploy/python
+
+`export PROJECT_ID=train-food-11-classification`
+
+`export IMAGE_URI=eu.gcr.io/$PROJECT_ID/food_predictor_app`
+
+`gcloud builds submit --tag $IMAGE_URI` /!\ it uses the gitignore
+
+`gcloud run deploy --image $IMAGE_URI --platform managed`
+
+gcloud run deploy --image $IMAGE_URI --platform managed --memory 2.0G
+
+go in cloud run GCP service to see your running app
+
+
+annex: 
+
+
+gcloud config get-value project
+
+TODO :
+
+Allow unauthenticated invocations to [foodpredictorapp] (y/N)? -> How to set to No

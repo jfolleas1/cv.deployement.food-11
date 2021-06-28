@@ -1,8 +1,11 @@
-static/*
-.DS_Store
-__pycache__/
+##### Personal
+
 resources/
-# deeplearning_model
+.DS_Store
+static
+.idea 
+.vscode
+venv
 
 
 ##### Python specific
